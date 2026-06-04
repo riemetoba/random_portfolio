@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,148 +18,175 @@
     <!-- CSS Link End -->
   </head>
   <body>
-   <!-- Header Part Start -->
-<nav class="bg-commonBg py-3 px-4 sm:px-6 lg:px-0 relative">
-  <div class="max-w-[1210px] mx-auto">
-    <div class="flex justify-between items-center gap-x-2">
+    <!-- Header Part Start -->
+    <nav class="bg-commonBg py-3 px-4 sm:px-6 lg:px-0 relative">
+      <div class="max-w-[1210px] mx-auto">
+        <div class="flex justify-between items-center gap-x-2">
+          <div class="flex-shrink-0 w-[100px] sm:w-auto">
+            <picture>
+              <img src="asset/LOGO.png" alt="LOGO.png" class="w-full h-auto" />
+            </picture>
+          </div>
 
-      <div class="flex-shrink-0 w-[100px] sm:w-auto">
-        <picture>
-          <img src="asset/LOGO.png" alt="LOGO.png" class="w-full h-auto" />
-        </picture>
-      </div>
+          <div class="hidden md:block">
+            <ul class="flex gap-x-6 font-pop text-sm">
+              <li><a href="#" class="hover:text-pup duration-500">HOME</a></li>
+              <li>
+                <a href="#" class="hover:text-pup duration-500">ABOUT US</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-pup duration-500">SERVICES</a>
+              </li>
+              <li><a href="#" class="hover:text-pup duration-500">WORKS</a></li>
+            </ul>
+          </div>
 
-      <div class="hidden md:block">
-        <ul class="flex gap-x-6 font-pop text-sm">
-          <li><a href="#" class="hover:text-pup duration-500">HOME</a></li>
-          <li><a href="#" class="hover:text-pup duration-500">ABOUT US</a></li>
-          <li><a href="#" class="hover:text-pup duration-500">SERVICES</a></li>
-          <li><a href="#" class="hover:text-pup duration-500">WORKS</a></li>
-        </ul>
-      </div>
+          <div class="flex items-center gap-x-2 sm:gap-x-4 flex-shrink-0">
+            <a
+              href="#"
+              class="bg-pup text-white font-pop text-xs sm:text-sm font-medium px-3 py-2 sm:px-[20px] sm:py-[10px] uppercase rounded-[50px] hover:bg-transparent hover:text-black hover:duration-500 border border-transparent hover:border-black flex items-center gap-x-[6px] whitespace-nowrap"
+            >
+              Hire Me<i class="fa-regular fa-envelope"></i>
+            </a>
 
-      <div class="flex items-center gap-x-2 sm:gap-x-4 flex-shrink-0">
+            <button
+              id="menu-btn"
+              class="md:hidden text-black focus:outline-none flex flex-col justify-center items-center gap-y-1 w-6 h-6 flex-shrink-0"
+              aria-label="Toggle Menu"
+            >
+              <span class="w-6 h-[2px] bg-black block"></span>
+              <span class="w-6 h-[2px] bg-black block"></span>
+              <span class="w-6 h-[2px] bg-black block"></span>
+            </button>
+          </div>
+        </div>
 
-        
-          <a href="#"
-          class="bg-pup text-white font-pop text-xs sm:text-sm font-medium px-3 py-2 sm:px-[20px] sm:py-[10px] uppercase rounded-[50px] hover:bg-transparent hover:text-black hover:duration-500 border border-transparent hover:border-black flex items-center gap-x-[6px] whitespace-nowrap"
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden mt-3 bg-white shadow-lg rounded-xl p-4 absolute left-0 right-0 z-50 border border-gray-100"
         >
-          Hire Me<i class="fa-regular fa-envelope"></i>
-        </a>
-
-        <button
-          id="menu-btn"
-          class="md:hidden text-black focus:outline-none flex flex-col justify-center items-center gap-y-1 w-6 h-6 flex-shrink-0"
-          aria-label="Toggle Menu"
-        >
-          <span class="w-6 h-[2px] bg-black block"></span>
-          <span class="w-6 h-[2px] bg-black block"></span>
-          <span class="w-6 h-[2px] bg-black block"></span>
-        </button>
-
-      </div>
-    </div>
-
-    <div
-      id="mobile-menu"
-      class="hidden md:hidden mt-3 bg-white shadow-lg rounded-xl p-4 absolute left-0 right-0 z-50 border border-gray-100"
-    >
-      <ul class="flex flex-col gap-y-3 font-pop text-sm font-medium">
-        <li><a href="#" class="block hover:text-pup py-1 transition-colors">HOME</a></li>
-        <li><a href="#" class="block hover:text-pup py-1 transition-colors">ABOUT US</a></li>
-        <li><a href="#" class="block hover:text-pup py-1 transition-colors">SERVICES</a></li>
-        <li><a href="#" class="block hover:text-pup py-1 transition-colors">WORKS</a></li>
-      </ul>
-    </div>
-
-  </div>
-</nav>
-<!-- Header Part End -->
-
-    <!-- Banner Part Start -->
-<div class="bg-commonBg py-10 sm:py-5">
-  <div class="max-w-[1210px] mx-auto px-4 sm:px-6 lg:px-0">
-
-    <div class="flex flex-col-reverse md:flex-row justify-between items-center gap-y-8 md:gap-y-0">
-
-      <!-- Text Content -->
-      <div class="w-full md:w-[50%] lg:w-[40%] mt-0 md:mt-[100px] text-center md:text-left">
-        <h5 class="text-pup text-base font-medium font-pop">
-          SAKIB AL HASAN
-        </h5>
-        <h1
-          class="text-[#333333] text-4xl sm:text-5xl lg:text-6xl font-bold py-6 md:py-8 font-pop leading-tight lg:leading-[78px]"
-        >
-          Hello, my name's Sakib. I'm MERN Stack Developer.
-        </h1>
-        <div class="flex flex-wrap justify-center md:justify-start gap-3">
-          
-            <a href="#"
-            class="bg-pup text-white font-pop inline-block text-sm font-medium px-[20px] py-[14px] sm:py-[20px] uppercase rounded-[50px] hover:bg-transparent hover:text-black hover:duration-500 border border-transparent hover:border-black"
-          ><i class="fa-regular fa-envelope mr-1.5"></i>Contact Me
-          </a>
-          
-            <a href="#"
-            class="bg-pup text-white font-pop inline-block text-sm font-medium px-[20px] py-[14px] sm:py-[20px] uppercase rounded-[50px] hover:bg-transparent hover:text-black hover:duration-500 border border-transparent hover:border-black"
-          ><i class="fa-solid fa-download mr-1.5"></i>Download CV
-          </a>
+          <ul class="flex flex-col gap-y-3 font-pop text-sm font-medium">
+            <li>
+              <a href="#" class="block hover:text-pup py-1 transition-colors"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block hover:text-pup py-1 transition-colors"
+                >ABOUT US</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block hover:text-pup py-1 transition-colors"
+                >SERVICES</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block hover:text-pup py-1 transition-colors"
+                >WORKS</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <!-- Header Part End -->
 
-      <!-- Image -->
-      <div class="w-[70%] sm:w-[55%] md:w-[50%] mt-0 md:mt-[20px]">
-        <picture>
-          <img src="asset/sakib.png" alt="Sakib Al Hasan" class="w-full h-auto" />
-        </picture>
+    <!-- Banner Part Start -->
+    <div class="bg-commonBg py-10 sm:py-5">
+      <div class="max-w-[1210px] mx-auto px-4 sm:px-6 lg:px-0">
+        <div
+          class="flex flex-col-reverse md:flex-row justify-between items-center gap-y-8 md:gap-y-0"
+        >
+          <!-- Text Content -->
+          <div
+            class="w-full md:w-[50%] lg:w-[40%] mt-0 md:mt-[100px] text-center md:text-left"
+          >
+            <h5 class="text-pup text-base font-medium font-pop">
+              SAKIB AL HASAN
+            </h5>
+            <h1
+              class="text-[#333333] text-4xl sm:text-5xl lg:text-6xl font-bold py-6 md:py-8 font-pop leading-tight lg:leading-[78px]"
+            >
+              Hello, my name's Sakib. I'm MERN Stack Developer.
+            </h1>
+            <div class="flex flex-wrap justify-center md:justify-start gap-3">
+              <a
+                href="#"
+                class="bg-pup text-white font-pop inline-block text-sm font-medium px-[20px] py-[14px] sm:py-[20px] uppercase rounded-[50px] hover:bg-transparent hover:text-black hover:duration-500 border border-transparent hover:border-black"
+                ><i class="fa-regular fa-envelope mr-1.5"></i>Contact Me
+              </a>
+
+              <a
+                href="#"
+                class="bg-pup text-white font-pop inline-block text-sm font-medium px-[20px] py-[14px] sm:py-[20px] uppercase rounded-[50px] hover:bg-transparent hover:text-black hover:duration-500 border border-transparent hover:border-black"
+                ><i class="fa-solid fa-download mr-1.5"></i>Download CV
+              </a>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="w-[70%] sm:w-[55%] md:w-[50%] mt-0 md:mt-[20px]">
+            <picture>
+              <img
+                src="asset/sakib.png"
+                alt="Sakib Al Hasan"
+                class="w-full h-auto"
+              />
+            </picture>
+          </div>
+        </div>
       </div>
-
     </div>
-  </div>
-</div>
-<!-- Banner Part End -->
+    <!-- Banner Part End -->
 
-    <!-- Counter Part Start  -->
-    <div class="pt-[80px] pb-[90px]">
+    <!-- Counter Part Start -->
+    <div class="pt-[80px] pb-[90px] px-4 sm:px-6 lg:px-0">
       <div class="max-w-[1210px] m-auto">
-        <div class="flex justify-between items-center">
-          <div class="w-1/4 text-center">
-            <h3 class="text-[48px] font-pop font-semibold">
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-4 items-center"
+        >
+          <div class="text-center">
+            <h3 class="text-[36px] sm:text-[48px] font-pop font-semibold">
               <span class="counter">100</span>+
             </h3>
             <h4
-              class="uppercase text-base font-medium text-[#121212] opacity-70"
+              class="uppercase text-sm sm:text-base font-medium text-[#121212] opacity-70"
             >
-              projects
+              Projects
             </h4>
           </div>
-          <div class="w-1/4 text-center">
-            <h3 class="text-[48px] font-pop font-semibold">
+
+          <div class="text-center">
+            <h3 class="text-[36px] sm:text-[48px] font-pop font-semibold">
               <span class="counter">24</span>
             </h3>
             <h4
-              class="uppercase text-base font-medium text-[#121212] opacity-70"
+              class="uppercase text-sm sm:text-base font-medium text-[#121212] opacity-70"
             >
-              WINNING AWARD
+              Winning Award
             </h4>
           </div>
-          <div class="w-1/4 text-center">
-            <h3 class="text-[48px] font-pop font-semibold">
+
+          <div class="text-center">
+            <h3 class="text-[36px] sm:text-[48px] font-pop font-semibold">
               <span class="counter">70</span>+
             </h3>
             <h4
-              class="uppercase text-base font-medium text-[#121212] opacity-70"
+              class="uppercase text-sm sm:text-base font-medium text-[#121212] opacity-70"
             >
-              HAPPY CLIENTS
+              Happy Clients
             </h4>
           </div>
-          <div class="w-1/4 text-center">
-            <h3 class="text-[48px] font-pop font-semibold">
+
+          <div class="text-center">
+            <h3 class="text-[36px] sm:text-[48px] font-pop font-semibold">
               <span class="counter">10</span>
             </h3>
             <h4
-              class="uppercase text-base font-medium text-[#121212] opacity-70"
+              class="uppercase text-sm sm:text-base font-medium text-[#121212] opacity-70"
             >
-              YEAR EXPERIENCE
+              Year Experience
             </h4>
           </div>
         </div>
@@ -421,59 +448,69 @@
       </div>
       <!-- ============================= -->
       <div class="max-w-[1210px] m-auto">
-      <div class="flex justify-between relative z-[1] mt-[-80px]">
-        <div class="
-          pl-[100px] pr-[100px] py-[40px] bg-[#fff] shadow-2xl rounded-[30px]">
-          <img src="asset/Rating.png" alt="Rating.png" />
-          <p
-            class="text-pop text-[18px] text-[#000] laeding-[26px] w-[360px] my-[30px]"
+        <div class="flex justify-between relative z-[1] mt-[-80px]">
+          <div
+            class="pl-[100px] pr-[100px] py-[40px] bg-[#fff] shadow-2xl rounded-[30px]"
           >
-            Nulla nunc orci, suscipit vitae rutrum vitae, sagittis eget dui.
-            Vestibulum nisl lorem, porta at mollis varius, tincidunt in lectus.
-            Nam pulvinar auctor sem ac dictum. Ut sed felis urna.
-          </p>
-          <div class="flex justify-between items-center">
-<div class="flex">
-  <div class="">
-    <img src="asset/gol.png" alt="">
-  </div>
-  <div class="ml-[10px]">
-    <h5 class="text-[18px] text-pop text-[#000]">David Gueta</h5>
-    <h6 class="text-base text-pop text-[#000] opacity-50 py-[5px] ">UI/UX Designer</h6>
-  </div>
-</div>
-<div class="">
-  <img src="asset/text.png" alt="">
-</div>
+            <img src="asset/Rating.png" alt="Rating.png" />
+            <p
+              class="text-pop text-[18px] text-[#000] laeding-[26px] w-[360px] my-[30px]"
+            >
+              Nulla nunc orci, suscipit vitae rutrum vitae, sagittis eget dui.
+              Vestibulum nisl lorem, porta at mollis varius, tincidunt in
+              lectus. Nam pulvinar auctor sem ac dictum. Ut sed felis urna.
+            </p>
+            <div class="flex justify-between items-center">
+              <div class="flex">
+                <div class="">
+                  <img src="asset/gol.png" alt="" />
+                </div>
+                <div class="ml-[10px]">
+                  <h5 class="text-[18px] text-pop text-[#000]">David Gueta</h5>
+                  <h6
+                    class="text-base text-pop text-[#000] opacity-50 py-[5px]"
+                  >
+                    UI/UX Designer
+                  </h6>
+                </div>
+              </div>
+              <div class="">
+                <img src="asset/text.png" alt="" />
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="
-          pl-[100px] pr-[100px] py-[40px] bg-[#fff] shadow-2xl rounded-[30px]">
-          <img src="asset/Rating.png" alt="Rating.png" />
-          <p
-            class="text-pop text-[18px] text-[#000] laeding-[26px] w-[360px] my-[30px]"
+          <div
+            class="pl-[100px] pr-[100px] py-[40px] bg-[#fff] shadow-2xl rounded-[30px]"
           >
-            Nulla nunc orci, suscipit vitae rutrum vitae, sagittis eget dui.
-            Vestibulum nisl lorem, porta at mollis varius, tincidunt in lectus.
-            Nam pulvinar auctor sem ac dictum. Ut sed felis urna.
-          </p>
-          <div class="flex justify-between items-center">
-<div class="flex">
-  <div class="">
-    <img src="asset/gol.png" alt="">
-  </div>
-  <div class="ml-[10px]">
-    <h5 class="text-[18px] text-pop text-[#000]">David Gueta</h5>
-    <h6 class="text-base text-pop text-[#000] opacity-50 py-[5px] ">UI/UX Designer</h6>
-  </div>
-</div>
-<div class="">
-  <img src="asset/text.png" alt="">
-</div>
+            <img src="asset/Rating.png" alt="Rating.png" />
+            <p
+              class="text-pop text-[18px] text-[#000] laeding-[26px] w-[360px] my-[30px]"
+            >
+              Nulla nunc orci, suscipit vitae rutrum vitae, sagittis eget dui.
+              Vestibulum nisl lorem, porta at mollis varius, tincidunt in
+              lectus. Nam pulvinar auctor sem ac dictum. Ut sed felis urna.
+            </p>
+            <div class="flex justify-between items-center">
+              <div class="flex">
+                <div class="">
+                  <img src="asset/gol.png" alt="" />
+                </div>
+                <div class="ml-[10px]">
+                  <h5 class="text-[18px] text-pop text-[#000]">David Gueta</h5>
+                  <h6
+                    class="text-base text-pop text-[#000] opacity-50 py-[5px]"
+                  >
+                    UI/UX Designer
+                  </h6>
+                </div>
+              </div>
+              <div class="">
+                <img src="asset/text.png" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
     <!-- Testimony Part End -->
 
