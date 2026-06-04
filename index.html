@@ -18,74 +18,63 @@
     <!-- CSS Link End -->
   </head>
   <body>
-    <!-- Header Part Start  -->
-    <nav class="bg-commonBg py-3 px-4 sm:px-6 lg:px-0">
+   <!-- Header Part Start -->
+<nav class="bg-commonBg py-3 px-4 sm:px-6 lg:px-0 relative">
   <div class="max-w-[1210px] mx-auto">
-    <div class="flex justify-between items-center">
-      <div>
+    <div class="flex justify-between items-center gap-x-2">
+
+      <div class="flex-shrink-0 w-[100px] sm:w-auto">
         <picture>
-          <img src="asset/LOGO.png" alt="LOGO.png" />
+          <img src="asset/LOGO.png" alt="LOGO.png" class="w-full h-auto" />
         </picture>
       </div>
 
-      <div class="hidden md:flex items-center">
+      <div class="hidden md:block">
         <ul class="flex gap-x-6 font-pop text-sm">
-          <li>
-            <a href="#" class="hover:text-pup duration-500">HOME</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-pup duration-500">ABOUT US</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-pup duration-500">SERVICES</a>
-          </li>
-          <li>
-            <a href="#" class="hover:text-pup duration-500">WORKS</a>
-          </li>
+          <li><a href="#" class="hover:text-pup duration-500">HOME</a></li>
+          <li><a href="#" class="hover:text-pup duration-500">ABOUT US</a></li>
+          <li><a href="#" class="hover:text-pup duration-500">SERVICES</a></li>
+          <li><a href="#" class="hover:text-pup duration-500">WORKS</a></li>
         </ul>
       </div>
 
-      <div class="hidden sm:block">
-        <a
-          href="#"
-          class="bg-pup text-white font-pop text-sm font-medium px-[20px] py-[10px] uppercase rounded-[50px] hover:bg-transparent hover:text-black hover:duration-500 border border-transparent hover:border-black"
-          >Hire Me<i class="fa-regular fa-envelope ml-[6px]"></i
-        ></a>
-      </div>
+      <div class="flex items-center gap-x-2 sm:gap-x-4 flex-shrink-0">
 
-      <div class="md:hidden flex items-center gap-x-4">
-        <a
-          href="#"
-          class="sm:hidden bg-pup text-white font-pop text-xs font-medium px-[12px] py-[8px] uppercase rounded-[50px]"
-          >Hire <i class="fa-regular fa-envelope ml-[4px]"></i
-        ></a>
         
-        <button id="menu-btn" class="text-black focus:outline-none text-2xl">
-          <i class="fa-solid fa-bars"></i>
+          <a href="#"
+          class="bg-pup text-white font-pop text-xs sm:text-sm font-medium px-3 py-2 sm:px-[20px] sm:py-[10px] uppercase rounded-[50px] hover:bg-transparent hover:text-black hover:duration-500 border border-transparent hover:border-black flex items-center gap-x-[6px] whitespace-nowrap"
+        >
+          Hire Me<i class="fa-regular fa-envelope"></i>
+        </a>
+
+        <button
+          id="menu-btn"
+          class="md:hidden text-black focus:outline-none flex flex-col justify-center items-center gap-y-1 w-6 h-6 flex-shrink-0"
+          aria-label="Toggle Menu"
+        >
+          <span class="w-6 h-[2px] bg-black block"></span>
+          <span class="w-6 h-[2px] bg-black block"></span>
+          <span class="w-6 h-[2px] bg-black block"></span>
         </button>
+
       </div>
     </div>
 
-    <div id="mobile-menu" class="hidden md:hidden mt-4 bg-white/5 backdrop-blur-md rounded-lg p-4">
-      <ul class="flex flex-col gap-y-4 font-pop text-sm">
-        <li>
-          <a href="#" class="block hover:text-pup duration-500 py-1">HOME</a>
-        </li>
-        <li>
-          <a href="#" class="block hover:text-pup duration-500 py-1">ABOUT US</a>
-        </li>
-        <li>
-          <a href="#" class="block hover:text-pup duration-500 py-1">SERVICES</a>
-        </li>
-        <li>
-          <a href="#" class="block hover:text-pup duration-500 py-1">WORKS</a>
-        </li>
+    <div
+      id="mobile-menu"
+      class="hidden md:hidden mt-3 bg-white shadow-lg rounded-xl p-4 absolute left-0 right-0 z-50 border border-gray-100"
+    >
+      <ul class="flex flex-col gap-y-3 font-pop text-sm font-medium">
+        <li><a href="#" class="block hover:text-pup py-1 transition-colors">HOME</a></li>
+        <li><a href="#" class="block hover:text-pup py-1 transition-colors">ABOUT US</a></li>
+        <li><a href="#" class="block hover:text-pup py-1 transition-colors">SERVICES</a></li>
+        <li><a href="#" class="block hover:text-pup py-1 transition-colors">WORKS</a></li>
       </ul>
     </div>
+
   </div>
 </nav>
-
-    <!-- Header Part End -->
+<!-- Header Part End -->
 
     <!-- Banner Part Start  -->
     <div class="bg-commonBg py-5">
