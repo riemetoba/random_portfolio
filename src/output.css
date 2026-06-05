@@ -553,6 +553,9 @@
   .py-\[40px\] {
     padding-block: 40px;
   }
+  .py-\[60px\] {
+    padding-block: 60px;
+  }
   .py-\[70px\] {
     padding-block: 70px;
   }
@@ -626,6 +629,9 @@
   }
   .text-\[28px\] {
     font-size: 28px;
+  }
+  .text-\[32px\] {
+    font-size: 32px;
   }
   .text-\[36px\] {
     font-size: 36px;
@@ -785,9 +791,19 @@
       grid-column: span 2 / span 2;
     }
   }
+  .sm\:mt-\[60px\] {
+    @media (width >= 40rem) {
+      margin-top: 60px;
+    }
+  }
   .sm\:w-\[55\%\] {
     @media (width >= 40rem) {
       width: 55%;
+    }
+  }
+  .sm\:w-\[400px\] {
+    @media (width >= 40rem) {
+      width: 400px;
     }
   }
   .sm\:w-\[550px\] {
@@ -803,6 +819,11 @@
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .sm\:justify-start {
+    @media (width >= 40rem) {
+      justify-content: flex-start;
     }
   }
   .sm\:gap-x-4 {
@@ -840,6 +861,21 @@
       padding-block: 20px;
     }
   }
+  .sm\:py-\[30px\] {
+    @media (width >= 40rem) {
+      padding-block: 30px;
+    }
+  }
+  .sm\:py-\[100px\] {
+    @media (width >= 40rem) {
+      padding-block: 100px;
+    }
+  }
+  .sm\:text-left {
+    @media (width >= 40rem) {
+      text-align: left;
+    }
+  }
   .sm\:text-5xl {
     @media (width >= 40rem) {
       font-size: var(--text-5xl);
@@ -861,6 +897,11 @@
   .sm\:text-\[36px\] {
     @media (width >= 40rem) {
       font-size: 36px;
+    }
+  }
+  .sm\:text-\[44px\] {
+    @media (width >= 40rem) {
+      font-size: 44px;
     }
   }
   .sm\:text-\[48px\] {
@@ -931,6 +972,11 @@
   .lg\:w-\[40\%\] {
     @media (width >= 64rem) {
       width: 40%;
+    }
+  }
+  .lg\:w-\[500px\] {
+    @media (width >= 64rem) {
+      width: 500px;
     }
   }
   .lg\:grid-cols-3 {
