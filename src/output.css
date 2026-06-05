@@ -324,6 +324,9 @@
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
+  .w-\[40\%\] {
+    width: 40%;
+  }
   .w-\[70\%\] {
     width: 70%;
   }
@@ -362,6 +365,9 @@
   }
   .max-w-\[1210px\] {
     max-width: 1210px;
+  }
+  .max-w-full {
+    max-width: 100%;
   }
   .flex-shrink {
     flex-shrink: 1;
@@ -534,6 +540,9 @@
   }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .py-12 {
+    padding-block: calc(var(--spacing) * 12);
   }
   .py-\[5px\] {
     padding-block: 5px;
@@ -944,9 +953,19 @@
       flex-direction: row;
     }
   }
+  .md\:justify-between {
+    @media (width >= 48rem) {
+      justify-content: space-between;
+    }
+  }
   .md\:justify-start {
     @media (width >= 48rem) {
       justify-content: flex-start;
+    }
+  }
+  .md\:gap-0 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 0);
     }
   }
   .md\:gap-y-0 {
@@ -957,6 +976,11 @@
   .md\:py-8 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:py-\[100px\] {
+    @media (width >= 48rem) {
+      padding-block: 100px;
     }
   }
   .md\:text-left {
